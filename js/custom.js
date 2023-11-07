@@ -182,7 +182,7 @@
 -------------------------------------------------------*/
   
      $(window).scroll(function () {
-         if ($("#header").offset().top > 50) {
+         if ($("#header").offset().top > 200) {
              $("#header").addClass("menu-bg");
          } else {
              $("#header").removeClass("menu-bg");
