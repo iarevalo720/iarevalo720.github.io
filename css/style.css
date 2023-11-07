@@ -44,7 +44,7 @@ p {
 	font-weight: 400;
 }
 a {
-	color:#7EC13F;
+	color:#ed1b24;
 	background:none;
 	text-decoration: none;
 	outline: none;
@@ -294,8 +294,8 @@ section {
 
 .btn-white:hover, .btn-white:focus {
 	color: #FFF;
-	background: #7EC13F;
-	border-color:#7EC13F;
+	background: #ed1b24;
+	border-color:#ed1b24;
 }
 
 
@@ -306,8 +306,8 @@ section {
 }
 
 .btn-green {
-	background:#7EC13F;
-	border-color: #7EC13F;
+	background:#ed1b24;
+	border-color: #ed1b24;
 	color:#FFF;
 }
 
@@ -325,8 +325,8 @@ section {
 
 .btn-gray-border:hover, .btn-gray-border:focus {
 	color: #FFF;
-	background:#7EC13F;
-	border-color:#7EC13F;
+	background:#ed1b24;
+	border-color:#ed1b24;
 }
 
 /*-----------------------------------------------------------------*/
@@ -647,6 +647,12 @@ section {
 	width: 100%;
 	position: fixed;
 	z-index: 99999;
+
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
 }
 
 #main-menu {
@@ -655,7 +661,7 @@ section {
 }
 
 .menu-bg {
-	background:#202020;
+	background:#6c0c11d6;
 }
 
 #main-menu ul {
@@ -985,7 +991,7 @@ html[xmlns] .slides {
 	height: 60px;
 	line-height: 41px;
 	font-size: 45px;
-	color:#7EC13F;
+	color:#ed1b24;
 }
 
 .features-icon-box .features-info {
@@ -1069,8 +1075,8 @@ html[xmlns] .slides {
 }
 
 .content-tab-1 > .nav > li.active {
-    border: 2px solid #7EC13F;
-    background: #7EC13F;
+    border: 2px solid #ed1b24;
+    background: #ed1b24;
 }
 
 .tab-content-main {
@@ -1090,7 +1096,7 @@ html[xmlns] .slides {
 	position: absolute;
 	width: 40px;
 	height: 40px;
-	background: #7EC13F ;
+	background: #ed1b24 ;
 	color: #FFF;
 	text-align: center;
 	line-height: 35px;
@@ -1105,8 +1111,8 @@ html[xmlns] .slides {
 }
 
 .tab1-features:hover .icon {
-	border-color:#7EC13F;
-	color:#7EC13F;
+	border-color:#ed1b24;
+	color:#ed1b24;
 	background:transparent;
 }
 
@@ -1129,7 +1135,7 @@ html[xmlns] .slides {
 	font-size:20px;
 	border-radius:0;
 	opacity:1;
-	background:#7EC13F;
+	background:#ed1b24;
 	position: absolute;
 	margin: 0;
 }
@@ -1191,10 +1197,10 @@ html[xmlns] .slides {
 	height: 55px;
 	line-height: 55px;
 	text-align: center;
-	color: #7EC13F;
+	color: #ed1b24;
 	font-size: 22px;
 	font-weight: 600;
-	border: 1px solid #7EC13F;
+	border: 1px solid #ed1b24;
 	position: relative;
 	border-radius: 28px;
 	transition: all 0.7s ease-in-out 0s;
@@ -1202,8 +1208,8 @@ html[xmlns] .slides {
 
 .features-tab3 .features-left .features-item:hover .features-icon, .features-tab3 .features-right .features-item:hover .features-icon {
 	color:#FFF;
-	border-color:#7EC13F;
-	background:#7EC13F;
+	border-color:#ed1b24;
+	background:#ed1b24;
 }
 
 .features-tab3 .features-left .features-icon {
@@ -1233,10 +1239,10 @@ html[xmlns] .slides {
 	text-align: center;
 	font-size: 47px;
 	display: inline-block;
-	color: #7EC13F;
+	color: #ed1b24;
 	width: 100px;
 	height: 100px;
-	border: 1px solid #7EC13F;
+	border: 1px solid #ed1b24;
 	line-height: 100px;
 	border-radius: 50%;
 	margin-bottom: 20px;
@@ -1256,9 +1262,9 @@ html[xmlns] .slides {
 }
 
 .tab4-services-box:hover .icon {
-	background:#7EC13F;
+	background:#ed1b24;
 	color:#FFF;
-	border-color:#7EC13F;
+	border-color:#ed1b24;
 }
 
 .core-features .list {
@@ -1481,8 +1487,8 @@ ul.timeline {
 
 .filter.active, .filter:hover {
 	color:#FFF;
-	background:#7EC13F;
-	border-color:#7EC13F;
+	background:#ed1b24;
+	border-color:#ed1b24;
 }
 
 .work-main {
@@ -1683,8 +1689,8 @@ ul.timeline {
 }
 
 .socials ul li a:hover {
-	background:#7EC13F;
-	border-color:#7EC13F;
+	background:#ed1b24;
+	border-color:#ed1b24;
 	color:#FFF;
 }
 
@@ -1799,7 +1805,7 @@ ul.timeline {
 	border-radius: 50%;
 	display: inline-block;
 	margin: 0px auto;
-	background: #7EC13F none repeat scroll 0% 0%;
+	background: #ed1b24 none repeat scroll 0% 0%;
 }
 
 .services-box .services-desc {
@@ -1841,7 +1847,7 @@ ul.timeline {
 }
 
 .tabs .nav-tabs li.active a {
-	border-top: 2px solid #7EC13F;
+	border-top: 2px solid #ed1b24;
 	background: #FFF;
 	color: #272727;
 	font-weight: 700;
@@ -1963,7 +1969,7 @@ ul.timeline {
 .video-caption:hover .video-icon{
 	background:#FFF;
 	border-color:#FFF;
-	color:#7EC13F;
+	color:#ed1b24;
 }
 
 .video-caption .video-caption-info {
@@ -2084,8 +2090,8 @@ ul.timeline {
 }
 
 #testimonials .owl-controls .owl-page.active span {
-	background:#7EC13F;
-	border-color:#7EC13F;
+	background:#ed1b24;
+	border-color:#ed1b24;
 }
 
 /*-----------------------------------------------------------------*/
@@ -2211,7 +2217,7 @@ ul.timeline {
 	font-size:20px;
 	border-radius:0;
 	opacity:0.9;
-	background:#7EC13F;
+	background:#ed1b24;
 	position: absolute;
 }
 
@@ -2224,7 +2230,7 @@ ul.timeline {
 }
 
 #featured-works .owl-prev:hover, #featured-works .owl-next:hover {
-	background:#7EC13F;
+	background:#ed1b24;
 	opacity:1;
 }
 
@@ -2287,7 +2293,7 @@ ul.timeline {
 }
 
 .breadcrumb ul li a:hover {
-	color:#7EC13F;
+	color:#ed1b24;
 }
 
 .breadcrumb ul li.current a {
@@ -2295,7 +2301,7 @@ ul.timeline {
 }
 
 .breadcrumb ul li.current a:hover {
-	color: #7EC13F;
+	color: #ed1b24;
 }
 
 .work-detail .btn {
@@ -2352,7 +2358,7 @@ ul.timeline {
 	font-size:20px;
 	border-radius:0;
 	opacity:0.8;
-	background:#7EC13F;
+	background:#ed1b24;
 	position: absolute;
 }
 
@@ -2366,7 +2372,7 @@ ul.timeline {
 
 #single-work-slider .owl-prev:hover, #single-work-slider .owl-next:hover {
 	opacity:1;
-	background:#7EC13F;
+	background:#ed1b24;
 }
 
 #single-work-slider .item img {
@@ -2477,7 +2483,7 @@ blockquote {
 	text-align: justify;
 	color: #929292;
 	letter-spacing: 0.1px;
-	border-left: 5px solid #7EC13F;
+	border-left: 5px solid #ed1b24;
 }
 
 blockquote a {
@@ -2678,7 +2684,7 @@ li.comment ol.comment-sub {
 }
 
 .post-categories a:hover {
-	color:#7EC13F;
+	color:#ed1b24;
 }
 
 .sidebar-widget {
@@ -2694,7 +2700,7 @@ li.comment ol.comment-sub {
 }
 
 .sidebar-widget a:hover {
-	color:#7EC13F;
+	color:#ed1b24;
 }
 
 .sidebar-widget img {
@@ -2737,7 +2743,7 @@ li.comment ol.comment-sub {
 }
 
 .tags a:hover {
-	background:#7EC13F;
+	background:#ed1b24;
 	color:#FFF;
 	border: 1px solid #ccc;
 }
