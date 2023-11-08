@@ -4,14 +4,14 @@
  */
 
 /* clearfix */
-.owl-carousel .owl-wrapper:after {
+/* .owl-carousel .owl-wrapper:after {
 	content: ".";
 	display: block;
 	clear: both;
 	visibility: hidden;
 	line-height: 0;
 	height: 0;
-}
+} */
 /* display none until init */
 .owl-carousel{
 	display: none;
@@ -20,14 +20,18 @@
 	-ms-touch-action: pan-y;
 }
 .owl-carousel .owl-wrapper{
-	display: none;
-	position: relative;
-	-webkit-transform: translate3d(0px, 0px, 0px);
+	/* display: flex; */
+	/* align-items: center; */
+	/* justify-content: center; */
+	/* position: relative; */
+	/* -webkit-transform: translate3d(0px, 0px, 0px); */
 }
 .owl-carousel .owl-wrapper-outer{
+	display: flex;
+	justify-content: center;
 	overflow: hidden;
 	position: relative;
-	width: 100%;
+	/* width: 100%; */
 }
 .owl-carousel .owl-wrapper-outer.autoHeight{
 	-webkit-transition: height 500ms ease-in-out;

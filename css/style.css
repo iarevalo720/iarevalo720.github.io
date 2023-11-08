@@ -156,6 +156,14 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	position:relative;
 }
 
+.contenedor-equipo{
+	/* width: 100%; */
+	/* margin: auto; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 .title-box {
 	border-bottom-width: 0px;
 	margin-bottom: 75px;
@@ -750,7 +758,7 @@ section {
 	font-weight: bold;
 	line-height: 70px;
 	text-transform: uppercase;
-	margin: 6px -10px;
+	margin: 6px 10px;
 	color: #fff;
 }
 
@@ -984,9 +992,27 @@ html[xmlns] .slides {
 /*-----------------------------------------------------------------*/
 /* About
 /*-----------------------------------------------------------------*/
+.contenedor-quienes-somos{
+	padding: 70px 0;
+}
+
+.quienes-somos{
+	text-align: center;
+	font-weight: 600;
+	color: #111;
+	font-size: 25px;
+	width: 80%;
+	margin: auto;
+}
+
+.contenedor-vis-mis{
+	width: 90%;
+}
 
 .features-icon-box {
 	margin-bottom:50px;
+	/* width: 80%; */
+	margin: auto;
 }
 
 .features-icon-box .features-icon {
@@ -1004,6 +1030,19 @@ html[xmlns] .slides {
 
 .features-icon-box .features-info p{
 	text-align: justify;
+}
+
+
+.features-icon-box i{
+	color: #fff;
+}
+
+.features-info h4{
+	color: #fff;
+}
+
+.features-info p{
+	color: #fff;
 }
 
 
@@ -1633,10 +1672,12 @@ ul.timeline {
 }
 
 .team-items {
-	width: 100%;
+	/* width: 100%; */
 	height: auto;
 	overflow: hidden;
 	position: relative;
+	/* margin: auto; */
+
 }
 
 .team-items .item {
@@ -1644,6 +1685,7 @@ ul.timeline {
 	height: auto;
 	font-weight: 300;
 	margin:0px 10px 10px;
+	/* margin: auto; */
 	padding: 15px;
 	cursor: pointer;
 }
