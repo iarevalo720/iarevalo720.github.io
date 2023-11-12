@@ -169,12 +169,59 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 }
 
 .contenedor-equipo{
-	/* width: 100%; */
-	/* margin: auto; */
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 }
+
+.titulo-equipo{
+	margin-bottom: 40px;
+}
+
+.contenedor-equipo .equipo-directivo{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	row-gap: 30px;
+	column-gap: 10%;
+	margin-bottom: 30px;
+}
+
+.contenedor-equipo .equipo-directivo .item-equipo{
+	width: 170px;
+}
+
+.titulo-equipo{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.nombre-equipo{
+	text-transform: none;
+	text-align: center;
+}
+
+.puesto-equipo{
+	text-align: center;
+}
+
+.pais-equipo{
+	text-align: center;
+}
+
+.contenedor-equipo .paises-equipo{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 100px;
+	flex-wrap: wrap;
+	margin-bottom: 80px;
+}
+
+.contenedor-equipo .paises-equipo .item-equipo{
+	width: 170px;
+}
+
 
 .title-box {
 	border-bottom-width: 0px;
