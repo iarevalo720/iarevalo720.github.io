@@ -229,6 +229,10 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	position: relative;
 }
 
+.titulo-nos-comprometemos{
+	margin-bottom: 30px;
+}
+
 .title-box h2.title {
 	font-weight: 700;
 	font-size: 29px;
@@ -1189,7 +1193,7 @@ html[xmlns] .slides {
 }
 
 .tab-content-main {
-	padding: 70px 0px 0px;
+	padding: 0px 0px 0px;
 }
 
 .tab-content-main img {
@@ -1554,8 +1558,25 @@ ul.timeline {
 
 
 /*-----------------------------------------------------------------*/
-/* Works
+/* Works - galeria
 /*-----------------------------------------------------------------*/
+.contenedor-galeria{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.contenedor-galeria div{
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 250px;
+	max-width: 400px;
+}
+.contenedor-galeria div img{
+	width: 100%;
+}
 
 .fa-angle-double-down{
 	font-size: 40px;
@@ -1625,18 +1646,18 @@ ul.timeline {
 	overflow: hidden;
 }
 
-.work-grid .work-item .work-image {
+/* .work-grid .work-item .work-image {
 	overflow: hidden;
 	width: 100%;
 	-webkit-transition: all 0.8s;
 	-moz-transition: all 0.8s;
 	transition: all 0.8s;
-}
+} */
 
-.work-grid .work-item .work-image img {
+/* .work-grid .work-item .work-image img {
 	width:100%;
 	height: auto;
-}
+} */
 
 .work-grid .work-item .work-caption {
 	position: absolute;
@@ -2924,10 +2945,6 @@ li.comment ol.comment-sub {
 .contact-form {
 	display: block;
 	padding: 0px 0px 30px 0px;
-}
-
-.contact-info {
-	margin-bottom:65px;
 }
 
 .contact-info p {
