@@ -14,7 +14,7 @@ html, body {
 	border: none;
 	color: #eee;
 	position: relative;
-	background: #333;
+	background: #0f0f0f;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -126,34 +126,54 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	clear:both;
 }
 
-.eslogan{
-	font-size: 26px;
-	letter-spacing: 1px;
-	font-family: "Courgette";
-	text-transform: none;
+.eslogan1{
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 50px 10px 20px 10px;
+	color: #fff;
+}
 
+.eslogan2{
+	margin-top: 50px;
+	font-size: 18px;
+	letter-spacing: 1px;
+	/* font-family: 'Open Sans', sans-serif; */
+	text-transform: none;
+}
+
+.separador-eslogan2{
+	margin: auto;
+	margin-top: 4px;
+	display: block;
+	width: 430px;
+	height: 2px;
+	background: #ffffffa1;
 }
 
 .scrollup {
-	width:35px;
-	height:35px;
+	width:50px;
+	height:50px;
 	position:fixed;
 	bottom:30px;
 	right:15px;
-	display:none;
+	display:flex;
 	background:#F5514B;
-	text-align: center;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	border-radius: 3px;
 }
 
 .scrollup i {
 	color:#fff;
 	font-size:15px;
 	display:block;
-	line-height:33px;
+	line-height:40px;
 }
 
 .scrollup:hover {
-	background:rgba(126, 193, 63, .9);
+	background:#fd8783;
 }
 
 .section {
@@ -170,8 +190,14 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 }
 
 .contenedor-equipo{
+	margin: auto;
+	margin-bottom: 100px;
+	width: 70%;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 25%;
 }
 
 .titulo-equipo{
@@ -181,9 +207,8 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 
 .contenedor-equipo .equipo-directivo{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
-	flex-wrap: wrap;
 	row-gap: 30px;
 	column-gap: 10%;
 	margin-bottom: 30px;
@@ -193,7 +218,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	width: 170px;
 }
 
-.titulo-equipo{
+.item-equipo .titulo-equipo{
 	text-align: center;
 	margin-bottom: 20px;
 }
@@ -201,28 +226,46 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 .nombre-equipo{
 	text-transform: none;
 	text-align: center;
+	color: #eee;
 }
 
 .puesto-equipo{
+	font-size: 12px;
 	text-align: center;
+	color: #aaa;
+	margin-bottom: 5px;
 }
 
 .pais-equipo{
 	text-align: center;
+	color: #aaa;
+	font-size: 12px;
+	margin-bottom: 5px;
 }
 
 .contenedor-equipo .paises-equipo{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
-	gap: 100px;
+	gap: 20px;
 	flex-wrap: wrap;
-	margin-bottom: 80px;
 }
 
 .contenedor-equipo .paises-equipo .item-equipo{
 	width: 170px;
+	/* border: 1px solid #fff; */
+
+	row-gap: 30px;
+	column-gap: 10%;
+	margin-bottom: 30px;
 }
+
+.correo-equipo{
+	text-transform: lowercase;
+	color: #7a7a7a;
+	text-align: center;
+}
+
 
 
 .title-box {
@@ -309,7 +352,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 }
 
 .overlay {
-	background:rgba(0, 0, 0, 0.4) url("../images/pattern.png") repeat;
+	background:rgba(0, 0, 0, 0.6) url("../images/pattern.png") repeat;
 	position: absolute;
 	display: block;
 	width: 100%;
@@ -780,10 +823,10 @@ section {
 
 .navbar-toggle {
 	color: #FFF;
-	margin-top: 4px;
+	/* margin-top: 4px; */
 	font-size: 32px;
 	margin-bottom: 0px;
-	padding-top: 9px;
+	/* padding-top: 9px; */
 	position: absolute;
 	right: 0px;
 	padding-right: 0;
@@ -796,6 +839,7 @@ section {
 
 .logo-nav {
 	float: left;
+	margin: 5px 0px;
 	line-height: 60px;
 }
 
@@ -1080,25 +1124,27 @@ html[xmlns] .slides {
 
 .features-icon-box {
 	margin-bottom:50px;
-	/* width: 80%; */
 	margin: auto;
 }
 
 .features-icon-box .features-icon {
 	position: absolute;
-	width: 60px;
-	height: 60px;
-	line-height: 41px;
-	font-size: 45px;
+	width: 42px;
+	height: 42px;
+	/* line-height: 41px; */
+	font-size: 42px;
 	color:#9C0001;
 }
 
 .features-icon-box .features-info {
-	margin-left: 80px;
+	margin-left: 58px;
 }
 
 .features-icon-box .features-info p{
 	text-align: justify;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+	font-size: 18px;
 }
 
 
@@ -1120,7 +1166,7 @@ html[xmlns] .slides {
 /*-----------------------------------------------------------------*/
 
 #facts {
-	background:url(../images/parallax/facts.jpg) no-repeat;
+	background:url(../images/parallax/facts.jpeg) no-repeat;
 	padding: 150px 0px 100px;
 }
 
@@ -1934,14 +1980,14 @@ ul.timeline {
 .services-box {
 	text-align: center;
 	margin-bottom: 50px;
-	border: 2px solid #4a4a4a;
+	border: 2px solid #212020;
 	padding: 29px 10px 20px;
 }
 
 .services-box .services-icon {
 	width: 80px;
 	height: 80px;
-	color: #FFF;
+	color: #b6b6b6;
 	font-size: 38px;
 	line-height: 80px;
 	border-radius: 50%;
@@ -1956,7 +2002,7 @@ ul.timeline {
 
 .services-box .services-desc h4 {
 	margin: 31px 0px 20px;
-	color: #eee;
+	color: #b7b6b6;
 }
 
 
@@ -3028,7 +3074,6 @@ footer {
 }
 
  @media (max-width: 768px) {
-	 
  .thumnail-img {
 	width:50%;
 }
@@ -3089,6 +3134,7 @@ footer {
 
  .navbar-toggle {
  display: block !important;
+ /* line-height: 70px; */
 }
 
  #main-menu ul li {
