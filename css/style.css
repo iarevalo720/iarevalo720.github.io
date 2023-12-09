@@ -138,6 +138,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	margin-top: 50px;
 	font-size: 18px;
 	letter-spacing: 1px;
+	color: #ffffffe4;
 	/* font-family: 'Open Sans', sans-serif; */
 	text-transform: none;
 }
@@ -146,9 +147,11 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	margin: auto;
 	margin-top: 4px;
 	display: block;
-	width: 430px;
+	width: 80%;
+	/* min-width: 420px; */
+	max-width: 450px;
 	height: 2px;
-	background: #ffffffa1;
+	background: #ffffff44;
 }
 
 .scrollup {
@@ -190,6 +193,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 }
 
 .contenedor-equipo{
+	position: relative;
 	margin: auto;
 	margin-bottom: 100px;
 	width: 70%;
@@ -200,6 +204,12 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	gap: 25%;
 }
 
+.contenedor-equipo .logotipo-equipo{
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	opacity: 0.1;
+}
 .titulo-equipo{
 	margin-bottom: 40px;
 	color: #eee;
@@ -212,6 +222,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	row-gap: 30px;
 	column-gap: 10%;
 	margin-bottom: 30px;
+	z-index: 2;
 }
 
 .contenedor-equipo .equipo-directivo .item-equipo{
@@ -275,7 +286,9 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 }
 
 .titulo-nos-comprometemos{
-	margin-bottom: 30px;
+	margin: auto;
+	margin-bottom: 50px;
+	width: 80%;
 }
 
 .title-box h2.title {
@@ -1103,8 +1116,9 @@ html[xmlns] .slides {
 /* About
 /*-----------------------------------------------------------------*/
 .contenedor-quienes-somos{
+	width: 100%;
 	padding: 70px 0;
-	background: #9C0001	;
+	background: #9C0001;
 }
 
 .quienes-somos{
@@ -1131,7 +1145,6 @@ html[xmlns] .slides {
 	position: absolute;
 	width: 42px;
 	height: 42px;
-	/* line-height: 41px; */
 	font-size: 42px;
 	color:#9C0001;
 }
@@ -1323,6 +1336,24 @@ html[xmlns] .slides {
 	display: block;
 	width: 100%;
 	height: auto;
+}
+
+
+
+.contenedor-servicios{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.contenedor-servicios div{
+	width: 300px;
+}
+
+
+.services-desc h4{
+	text-align: center;
 }
 
 .tab2-services-box {
@@ -1624,8 +1655,8 @@ ul.timeline {
 .contenedor-galeria div{
 	flex-grow: 1;
 	flex-shrink: 1;
-	flex-basis: 250px;
-	max-width: 400px;
+	flex-basis: 180px;
+	max-width: 380px;
 }
 .contenedor-galeria div img{
 	width: 100%;
@@ -1981,7 +2012,7 @@ ul.timeline {
 	text-align: center;
 	margin-bottom: 50px;
 	border: 2px solid #212020;
-	padding: 29px 10px 20px;
+	padding: 29px 0px;
 }
 
 .services-box .services-icon {
@@ -2001,7 +2032,7 @@ ul.timeline {
 }
 
 .services-box .services-desc h4 {
-	margin: 31px 0px 20px;
+	margin: 31px 0px;
 	color: #b7b6b6;
 }
 
@@ -3059,6 +3090,10 @@ footer {
 .contenedor-nos-comprometemos{
 	margin-top: 0px;
 }
+
+.quienes-somos{
+	width: 90%;
+}
 }
 
  @media (min-width: 768px) and (max-width: 992px) {
@@ -3067,20 +3102,52 @@ footer {
 	width:50%;
 }
 
+.quienes-somos{
+	width: 90%;
+}
+
 .big{
 	font-size: 40px;
 	line-height: 55px;
 }
 }
-
+@media (max-width: 695px) {
+	.contenedor-equipo .logotipo-equipo{
+		top: 120px;
+		width: 150%;
+	}
+}
  @media (max-width: 768px) {
+
  .thumnail-img {
 	width:50%;
+ }
+.quienes-somos{
+	width: 91%;
+	font-size: 20px;
 }
 
 .big{
 	font-size: 40px;
 	line-height: 45px;
+}
+
+
+.features-icon-box .features-info p{
+	font-size: 14px;
+}
+
+.features-icon-box .features-info {
+}
+
+.features-icon-box .features-icon {
+	width: 32px;
+	height: 32px;
+	font-size: 32px;
+}
+
+.features-icon-box .features-info {
+	margin-left: 42px;
 }
 }
 
@@ -3088,6 +3155,9 @@ footer {
 	 
 .thumnail-img {
 	width:100%;
+}
+.title-box h2.title{
+	font-size: 24px;	
 }
 
 }
@@ -3101,6 +3171,10 @@ footer {
 
 .small {
     font-size: 19px;
+}
+
+.title-box h2.title{
+	font-size: 20px;	
 }
 
 }
@@ -3134,7 +3208,6 @@ footer {
 
  .navbar-toggle {
  display: block !important;
- /* line-height: 70px; */
 }
 
  #main-menu ul li {
