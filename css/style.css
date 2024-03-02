@@ -605,21 +605,25 @@ section {
   gap: 30px;
 }
 
-.contenedor-idioma div {
+.contenedor-idioma a {
   width: 45px;
-  /* height: 45px; */
 }
 
-.contenedor-idioma div img {
+.contenedor-idioma a img {
   border-radius: 50px;
   cursor: pointer;
   width: 100%;
   height: auto;
 }
 
-.contenedor-idioma div img:hover {
+.contenedor-idioma a img:hover {
   border: 2px solid #fff;
 }
+
+.contenedor-idioma a img::selection{
+  background-color: transparent;
+}
+
 /*-----------------------------------------------------------------*/
 /* Slider
 /*-----------------------------------------------------------------*/
