@@ -1641,7 +1641,7 @@ ul.timeline {
 
 .services-box .services-desc ul li{
   margin: 20px 0px;
-  text-align: left;
+  text-align: center;
   text-decoration: none;
   font-size: 16px;
   color: #ccc;
@@ -1826,7 +1826,7 @@ footer {
   }
 
   .services-box .services-desc ul{
-    width: 255px;
+    width: 215px;
   }
 
   .services-box .services-desc ul li{
