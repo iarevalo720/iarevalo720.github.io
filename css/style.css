@@ -1112,7 +1112,9 @@ html[xmlns] .slides {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .contenedor-servicios div {
@@ -1121,118 +1123,6 @@ html[xmlns] .slides {
 
 .services-desc h4 {
   text-align: center;
-}
-
-.tab2-services-box {
-  margin-bottom: 30px;
-  padding: 15px;
-  border: 1px solid #e1dddd;
-}
-.tab2-services-box .media {
-  margin-bottom: 30px;
-}
-
-.tab2-services-box .services-info p {
-  margin-bottom: 0;
-}
-
-.features-tab3 {
-  margin-top: 20px;
-  display: inline-block;
-}
-
-.features-tab3 .features-left,
-.features-tab3 .features-right {
-  padding-top: 20px;
-}
-
-.features-tab3 .features-left h4,
-.features-tab3 .features-right h4,
-.features-tab3 .features-left p,
-.features-tab3 .features-right p {
-  line-height: 25px;
-}
-
-.features-tab3 .features-left .features-item,
-.features-tab3 .features-right .features-item {
-  margin-bottom: 40px;
-}
-
-.features-tab3 .features-left .features-icon,
-.features-tab3 .features-right .features-icon {
-  width: 55px;
-  height: 55px;
-  line-height: 55px;
-  text-align: center;
-  color: #9c0001;
-  font-size: 22px;
-  font-weight: 600;
-  border: 1px solid #9c0001;
-  position: relative;
-  border-radius: 28px;
-  transition: all 0.7s ease-in-out 0s;
-}
-
-.features-tab3 .features-left .features-item:hover .features-icon,
-.features-tab3 .features-right .features-item:hover .features-icon {
-  color: #fff;
-  border-color: #9c0001;
-  background: #9c0001;
-}
-
-.features-tab3 .features-left .features-icon {
-  float: right;
-}
-
-.features-tab3 .features-right .features-icon {
-  float: left;
-}
-
-.features-tab3 .features-left .features-info {
-  text-align: right;
-  margin-right: 90px;
-}
-
-.features-tab3 .features-right .features-info {
-  text-align: left;
-  margin-left: 90px;
-}
-
-.tab4-services-box {
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.tab4-services-box .icon {
-  text-align: center;
-  font-size: 47px;
-  display: inline-block;
-  color: #9c0001;
-  width: 100px;
-  height: 100px;
-  border: 1px solid #9c0001;
-  line-height: 100px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.7s ease-in-out;
-  -ms-transition: all 0.7s ease-in-out;
-  -o-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
-}
-
-.tab4-services-box .info {
-  margin-top: 20px;
-}
-
-.tab4-services-box .info h4 {
-  margin-bottom: 14px;
-}
-
-.tab4-services-box:hover .icon {
-  background: #9c0001;
-  color: #fff;
-  border-color: #9c0001;
 }
 
 .core-features .list {
@@ -1709,9 +1599,15 @@ ul.timeline {
 
 .services-box {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   border: 2px solid #212020;
   padding: 29px 0px;
+}
+
+.services-box.commodities {
+  background: #191919;
+  border-radius: 3px;
+  box-shadow: 3px 3px 9px #000;
 }
 
 .services-box .services-icon {
@@ -1735,6 +1631,22 @@ ul.timeline {
   color: #b7b6b6;
 }
 
+
+.services-box .services-desc ul{
+  padding: 0;
+  list-style-type: none;
+  width: 325px;
+  margin: auto;
+}
+
+.services-box .services-desc ul li{
+  margin: 20px 0px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  color: #ccc;
+  font-weight: 600;
+}
 /*-----------------------------------------------------------------*/
 /*   Single Work Page
 /*-----------------------------------------------------------------*/
@@ -1840,7 +1752,42 @@ footer {
     top: 120px;
     width: 150%;
   }
+
+  .contenedor-servicios div {
+    width: 160px;
+  }
+
+  .service .services-box {
+    margin-bottom: 5px;
+    margin: 0;
+    padding: 29px 0px 0px 0px;
+  }
+  
+  .service .services-box .services-desc h4{
+    font-size: 12px;
+  }
+
+  .contenedor-servicios {
+    gap: 5px;
+  }
+
+
+
+  .services-box .services-icon {
+    width: 65px;
+    height: 65px;
+    font-size: 32px;
+    line-height: 66px;
+  }
+
+  .services-box .services-desc h4 {
+    margin: 25px 0px;
+  }
 }
+
+
+
+
 @media (max-width: 768px) {
   .thumnail-img {
     width: 50%;
@@ -1876,6 +1823,15 @@ footer {
   }
   .title-box h2.title {
     font-size: 24px;
+  }
+
+  .services-box .services-desc ul{
+    width: 255px;
+  }
+
+  .services-box .services-desc ul li{
+    font-size: 15px;
+    margin: 10px 0px;
   }
 }
 
