@@ -247,6 +247,7 @@ input[type="color"]:focus,
   margin: 0px auto;
   text-align: center;
   margin-bottom: 20px;
+  color: #f9d597;
 }
 
 .contenedor-equipo .logotipo-equipo {
