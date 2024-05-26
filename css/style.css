@@ -1458,6 +1458,9 @@ html[xmlns] .slides {
   align-items: center;
 }
 
+.services-box p{
+  color: #f9d597;
+}
 .services-box.commodities {
   background: #23211c;
   border-radius: 3px;
@@ -1491,6 +1494,7 @@ html[xmlns] .slides {
 }
 
 .services-box h4 {
+  text-transform: uppercase;
   color: #b7b6b6;
   margin: 0;
 }
@@ -1507,9 +1511,50 @@ html[xmlns] .slides {
   color: #f9d597;
 }
 
+.commodities{
+  position: relative;
+}
+
+.commodities .lista-commodities{
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.services-box.active{
+  height: 500px;
+}
 
 
+.services-box.active .lista-commodities{
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0px auto;
+}
 
+.services-box.active .lista-commodities p{
+  transition: 0.3s;
+  font-weight: 600;
+  font-size: 13px;
+  color: #eee;
+  text-align: left;
+  cursor: default;
+  width: 240px;
+  padding: 5px 0px;
+  padding-left: 5px;
+}
+
+.services-box.active .lista-commodities p:hover{
+  padding-left: 7px;
+  background: #444;
+}
 
 
 /*-----------------------------------------------------------------*/
@@ -1634,8 +1679,6 @@ footer {
     gap: 5px;
   }
 
-
-
   .services-box .services-icon {
     width: 65px;
     height: 65px;
@@ -1643,7 +1686,16 @@ footer {
     line-height: 66px;
   }
 
-  .services-box h4 {
+  .services-box.active .lista-commodities p{
+    font-size: 11px;
+    width: 210px;
+    padding: 5px 0px;
+    padding-left: 5px;
+  }
+
+  .services-box p{
+    font-size: 12px;
+    line-height: 12px;
   }
 }
 
