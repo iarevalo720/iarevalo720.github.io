@@ -1748,6 +1748,10 @@ footer {
   .title-box h2.title {
     font-size: 24px;
   }
+
+  .contenedor-equipo .equipo-1{
+    margin-top: 0px;
+  }
 }
 
 @media (max-width: 480px) {
